@@ -1,0 +1,3 @@
+import { Pressable, Text as T, StyleSheet } from "react-native"; import { useTheme } from "../../theme/ThemeProvider";
+export default function Button({title,onPress,variant="primary"}:{title:string;onPress:()=>void;variant?:"primary"|"ghost"}){ const t=useTheme(); const bg=variant==="primary"?t.color.accent:"transparent"; const color=variant==="primary"?t.color.textLight:t.color.textDark; return(<Pressable onPress={onPress} style={[styles.btn,{backgroundColor:bg,borderColor:t.color.border}]}> <T style={{color,fontWeight:"600"}}>{title}</T></Pressable>); }
+const styles=StyleSheet.create({btn:{paddingVertical:12,paddingHorizontal:16,borderRadius:12,borderWidth:1,alignItems:"center"}});

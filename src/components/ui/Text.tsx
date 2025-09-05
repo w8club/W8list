@@ -1,0 +1,2 @@
+import { Text as T, TextProps } from "react-native"; import { useTheme } from "../../theme/ThemeProvider";
+export default function Text({variant="body",style,...p}:TextProps&{variant?:"h1"|"h2"|"body"|"muted"}){ const t=useTheme(); const s=[{color:t.color.textDark,fontSize:16}, variant==="muted"&&{color:t.color.muted}, variant==="h1"&&{fontSize:28,fontWeight:"600"}, variant==="h2"&&{fontSize:22,fontWeight:"600"}]; return <T {...p} style={[...s,style]} />; }
