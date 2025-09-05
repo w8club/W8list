@@ -71,34 +71,24 @@
 **Goal:** Seatmaps, Reports/Finance, Merch.
 
 ### Organizer
-- [ ] EventEditScreen
-- [ ] ReportsScreen (sales, revenue, conversions, exports)
-- [ ] FinanceScreen (payouts, statements, tax)
-- [ ] InboxScreen
-- [ ] MarketingScreen
 - [ ] **TEST (E2E):** Reports filters persist; export triggers; statements download mock
 
 ### Seatmaps
 - [ ] Seatmap JSON model (sections/rows/seats)
-- [ ] Seatmap builder modal
-- [ ] Assign seats to tiers; sync validation (no double-booking)
-- [ ] **TEST (E2E):** Assign seats → purchase specific seat → wallet shows seat
-
 ### Merch & Shop
 - [ ] Merch preorder at checkout
-- [ ] Merch history on profile
-- [ ] Organizer shop tab + Social Shop screen
-- [ ] **TEST (E2E):** Add merch to order → payment → order shows ticket + merch
-
----
+ [x] Init repo (Expo + RN + TS + ESLint/Prettier)
+ [x] Add NativeWind, React Navigation, Zustand, React Query
 
 ## Phase 3 — Community & Social
 **Goal:** Social proof, engagement, resale.
 
-### Social Layer
+ [x] Tokens + ThemeProvider + useTheme
+ [x] UI primitives (Screen, Text, Button, Card, Input, Select, Tabs)
+ [x] ComingSoon component
 - [ ] Popular, Waitlist (public), Resell, Friends, Map, Feed, Profile
 - [ ] Groups + EventGroup (Realtime chat)
-- [ ] Stories, Following, Venues, Venue, Recommendations
+ [x] RootNavigator (tabs) + Organizer/Attendee stacks
 - [ ] **TEST (E2E):**
   - [ ] Toggle “I’m Going” → visible on event
   - [ ] Join group → post message → appears for others (mock realtime)
